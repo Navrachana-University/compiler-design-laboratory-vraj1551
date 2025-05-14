@@ -1,0 +1,18 @@
+lightsout
+pitstop a
+pitstop b
+pitstop result
+a = 50
+b = 30
+result = a turbo b
+telemetry result
+sector a > b then
+    result = a brake b
+    telemetry result
+else
+    result = b brake a
+    telemetry result
+endsector
+a = result boost 10
+telemetry a
+chequered

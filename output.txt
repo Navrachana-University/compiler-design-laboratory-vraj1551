@@ -1,0 +1,19 @@
+a = 50
+b = 30
+t1 = a * b
+result = t1
+PRINT result
+t2 = a > b
+if t2 goto L1
+goto L2
+L1:
+t3 = a - b
+result = t3
+PRINT result
+L2:
+t4 = b - a
+result = t4
+PRINT result
+t5 = result + 10
+a = t5
+PRINT a
